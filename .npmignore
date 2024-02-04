@@ -1,0 +1,10 @@
+node_modules/
+.npm
+.idea
+/package-lock.json
+/pnpm-lock.yaml
+
+test/
+/.eslintrc.js
+/babel.config.js
+/webpack-config.js
