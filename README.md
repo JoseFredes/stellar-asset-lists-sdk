@@ -1,11 +1,11 @@
 # @stellar-asset-lists/sdk
 
-> Thin wrapper library for asset list catalogue
+Thin wrapper library for the Stellar asset list catalogue. The easiest way to start using SAL in your web app. 
 
 ## Installation
 
 ```shell
-npm i
+npm i @stellar-asset-lists/sdk
 ```
 
 ## Usage
@@ -69,4 +69,10 @@ setAssetListResolverOptions({
     catalogueUrl: 'https://stellar-asset-lists.github.io/index/', //replace the URL of the catalogue
     ipfsGatewayUrl: 'https://gateway.ipfs.io/ipfs/' //change default IPFS gateway URL
 })
+```
+
+## Testing
+
+```shell
+npm run test
 ```
