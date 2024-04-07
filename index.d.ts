@@ -1,31 +1,32 @@
-export interface AssetListDescriptor {
+export type AssetListDescriptor = {
   name: string;
   provider: string;
   description: string;
   icon: string;
   url: string;
-}
+};
 
-export interface Asset {
+export type Asset = {
   name: string;
-  contract?: string;
-  code?: string;
-  issuer?: string;
+  code: string;
   org: string;
   domain: string;
   icon: string;
-  decimals?: number;
+  decimals: number;
   comment?: string;
-}
+} & (
+  | { contract: string; issuer?: string }
+  | { issuer: string; contract: string }
+);
 
-export interface AssetList {
+export type AssetList = {
   name: string;
   provider: string;
   description: string;
   version: string;
   feedback: string;
   assets: Asset[];
-}
+};
 
 export function fetchAvailableAssetLists(): Promise<AssetListDescriptor[]>;
 export function fetchAssetList(url: string): Promise<AssetList>;
