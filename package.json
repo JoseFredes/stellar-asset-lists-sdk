@@ -5,6 +5,7 @@
   "main": "./lib/stellarAssetListsSdk.js",
   "module": "./src/index.js",
   "sideEffects": false,
+  "types": "index.d.ts",
   "scripts": {
     "build": "webpack --mode=production --config ./webpack-config.js",
     "test": "jest",
