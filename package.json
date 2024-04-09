@@ -1,11 +1,11 @@
 {
   "name": "@stellar-asset-lists/sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Thin wrapper library for asset list catalogue",
   "main": "./lib/stellarAssetListsSdk.js",
   "module": "./src/index.js",
-  "sideEffects": false,
   "types": "index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "build": "webpack --mode=production --config ./webpack-config.js",
     "test": "jest",
